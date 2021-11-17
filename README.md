@@ -8,4 +8,4 @@ Notas sobre el **Periodismo de Datos** en *UC3M*
 ## Por qué *Ponte Datos*
 Por Concepción Arenal Ponte
 
-autora: Victoria Fuertes González
+por **Victoria Fuertes González**
