@@ -9,15 +9,25 @@ En este gráfico he querido centrarme en la totalidad de la población de cada z
 
 ## PROCESO DE CREACIÓN
 ### ORGANIZACIÓN, LIMPIEZA Y SELECCIÓN DE DATOS
-Para llevar a cabo este proceso, me he servido de **OpenRefine** y de diversos archivos que también proporcionaba *Eurostat*, para poder interpretar los datos y así poder organizarlos y seleccionar los que fueron objeto de mi estudio. 
-1) ANTES DE CREAR EL PROYECTO TENEMOS QUE SEPARAR LAS COLUMNAS POR TABULACIONES, NO POR COMAS.
-1) ELIMINAR TODAS LAS COLUMNAS QUE HAGAN REFERENCIA A LOS AÑOS MENOS LAS DE 2019 (ÉPOCA PRECOVID Y ADEMÁS ASÍ PODER METER A UK EN LA LISTA TAMBIEN) - DESD TODO - EDITAR COLUMNAS -REORDENAR/QUITAR COLUMNAS
-2) Dividir la columna con el nombre:unit,sex,geo\time usando la coma como separador. De tal forma que ahora tendremos cuatro columnas.
-3) Eliminamos la primera, ya que es irrelevante AVG(Average,media).
-4) las siguientes las renombramos, de tal forma que tenemos sex y geo
-5) FILTRO DE TEXTO ESCRIBIR T, en la columna sex Y ASÍ TENER LOS DATOS de la totalidad de la población, con independencia del sexo
+Para llevar a cabo este proceso, me he servido de **OpenRefine** y me he apoyado en diversos archivos que también proporcionaba *Eurostat*, para poder interpretar los datos y así poder organizarlos y seleccionar posteriorme con OpenRefine. El archivo con los datos que he utilizado lo podeís encontrar [aquí](https://github.com/vifuertesg/uc3m-periodismo-datos/tree/main/data). Pasos seguidos en OpenRefine:
+1) Antes de crear el proyecto, he separado las columnas por tabulaciones y no por comas. 
+2) He eliminado todas las columnas relacionadas con los años menos la que corresponde a 2019. Procedimiento: Columna TODO - EDITAR COLUMNAS -REORDENAR/QUITAR COLUMNAS
+3) He dividido la columna con el nombre:unit,sex,geo\time usando la coma como separador. De tal forma que pasé a tener cuatro nuevas columnas. Procedimiento: columna UNIT,SEX,GEO\TIME - EDITAR COLUMNA - DIVIDIR EN VARIAS COLUMNAS
+4) Eliminé la primera (la que se encuentra más a la izquierda), ya que es irrelevante, todos los datos son: AVG(Average,media).
+5) Las dos columnas siguientes las renombré, para que me fuera más sencillo trabajar con ellas. De izq a derecha, los nuevos nombres: SEX (datos de género) Y GEO (datos de la región geográfica).
+6) Para prescindir de los datos que diferencian el género de los jóvenes, utilicé un FILTRO DE TEXTO (T=totalidad), en la columna sex. Así solo se quedaron los datos que hacen referencia a la totalidad de la población, con independencia del sexo
+7) También eliminé las celdas que hacen referencia a datos de la union europea en su totalidad y poder trabajar con los datos únicamente d elos países. Las celdas que eliminé fueron cuatro: EA19, EU 15, EU27_2020, EU28 (Procedimiento: FILTRO DE TEXTO INVERTIDO - PRIMERO DE EU Y LUEGO DE EA).
+8) REORGANIZAMOS LAS COLUMNAS de tal forma que queden de izquierda a derecha (geo - sex - 2019) y trasnformamos las celdas de la columna 2019 en números (procedimiento: columna 2019 - EDITAR CELDAS - TRANSFORMACIONES COMUNES - A NÚMERO).
+9) Exportamos en formato excel (.xls).
 
-7) eliminar las celdas que hacen referencia a datos de la union europea en su totalidad. Son cuatro: EA19, EU 15, EU27_2020, EU28 (FILTRO DE TEXTO INVERTIDO - PRIMERO DE EU Y LUEGO DE EA)
-8) REORGANIZAMOS LAS COLUMNAS DE TAL FORMA QUE QUEDEN DE IZQ A dercha (geo - sex - 2019), contraemos la columna de sex para que visualmente quede mejor 
+
+| **ANTES** | **DESPUÉS** |
+| ------------- | ------------- |
+| ![ant](https://github.com/vifuertesg/uc3m-periodismo-datos/blob/main/Img/ANTES.png)  | ![desp](https://github.com/vifuertesg/uc3m-periodismo-datos/blob/main/Img/DESPUE%CC%81S.png)  |
+
 
 ### DATAWRAPPER
+Lo único que me gustaría resaltar de este procedimiento son 3 puntos: 
+- La modificación manual que he llevado a cabo de las siglas de las regiones geográficas (ES-España, FR-Francia, MK-Macedonia...) con el objetivo de facilitar el entendimiento del gráfico. 
+- También he cuidado mucho los colores de la barras para que se pueda ver con más claridad las diferencias entre países, siendo Suecia el más claro con una media de 18 años de edad y Montenegro el más oscuro con una media de 33 años. Aquí también pretendía relacionar la claridad del color con el progreso y los tonos más oscuros, con el "hundimiento". 
+- Por último me gustaría comentar que los datos númericos estaban escritos con decimales, pero a la hora de realizar el gráfico he prescindido de ellos (sin embargo la longitud de las barras nos puede ofrecer una idea de por dónde van los tiros).
