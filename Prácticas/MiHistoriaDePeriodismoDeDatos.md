@@ -31,3 +31,5 @@ Lo único que me gustaría resaltar de este procedimiento son 3 puntos:
 - La modificación manual que he llevado a cabo de las siglas de las regiones geográficas (ES-España, FR-Francia, MK-Macedonia...) con el objetivo de facilitar el entendimiento del gráfico. 
 - También he cuidado mucho los colores de la barras para que se pueda ver con más claridad las diferencias entre países, siendo Suecia el más claro con una media de 18 años de edad y Montenegro el más oscuro con una media de 33 años. Aquí también pretendía relacionar la claridad del color con el progreso y los tonos más oscuros, con el "hundimiento". 
 - Por último me gustaría comentar que los datos númericos estaban escritos con decimales, pero a la hora de realizar el gráfico he prescindido de ellos (sin embargo la longitud de las barras nos puede ofrecer una idea de por dónde van los tiros).
+
+![Gráfico 1](https://github.com/vifuertesg/uc3m-periodismo-datos/blob/main/Img/Gra%CC%81fico%20UE.png)
