@@ -1,4 +1,13 @@
-## ORGANIZACIÓN, LIMPIEZA Y SELECCIÓN DE DATOS
+# PRÁCTICA 3&4. MI HISTORIA DE PERIODISMO DE DATOS
+Para esta actividad, he realizado dos gráficos a través de unos datos que he recolectado de la página web de Eurostat ([La oficina Europea de Estadística](https://ec.europa.eu/eurostat)). Dichos datos recogen las edades estimadas con las que los jóvenes de la Unión Europea se "independizan", o más concretamente, dejan atrás sus hogares familiares. Este archivo de datos está construido basándose en parámetros tales como el sexo,la procedencia geográfica y la fecha (en años, desde el 2000 hasta el 2020). A continuación, expondré los gráficos y explicaré detalladamente el proceso de creación que he seguido. 
+## GRÁFICOS CREADOS CON DATAWRAPPER
+[Gráfico 1](https://github.com/vifuertesg/uc3m-periodismo-datos/blob/main/Img/Gra%CC%81fico%20UE.png): **Media de edad con la que los jóvenes de la UE abandonan el hogar familiar**
+
+La razón por la cual he querido construir este gráfico radica en la creciente popularidad y, en mi opinión, importancia de este tema. Nos encontramos en un contexto nacional marcado por una elevada tasa de desempleo juvenil, dato que los medios de comunicación, las redes sociales o un probable 50% de nuestras conversaciones sobre este temido e incierto futuro no deja de recordarnos. Ahora bien, el desempleo juvenil está directamente relacionado con la tardía tendencia que tienen los jóvenes españoles a dejar sus hogares familiares y vivir de manera plenamente independiente. Por este motivo he querido diseñar esta visualización, porque así podremos entender por qué estar entre los diez últimos es un problema. 
+
+## PROCESO DE CREACIÓN
+
+### ORGANIZACIÓN, LIMPIEZA Y SELECCIÓN DE DATOS
 Para llevar a cabo este proceso, me he servido de OpenRefine
 para saber lo que significa cada datos me he apoyado en los documentos de los que dispone eurostat para poder analizar sus datos.
 1) ANTES DE CREAR EL PROYECTO TENEMOS QUE SEPARAR LAS COLUMNAS POR TABULACIONES, NO POR COMAS.
@@ -10,4 +19,5 @@ para saber lo que significa cada datos me he apoyado en los documentos de los qu
 
 7) eliminar las celdas que hacen referencia a datos de la union europea en su totalidad. Son cuatro: EA19, EU 15, EU27_2020, EU28 (FILTRO DE TEXTO INVERTIDO - PRIMERO DE EU Y LUEGO DE EA)
 8) REORGANIZAMOS LAS COLUMNAS DE TAL FORMA QUE QUEDEN DE IZQ A dercha (geo - sex - 2019), contraemos la columna de sex para que visualmente quede mejor 
-9) 
+
+### DATAWRAPPER
