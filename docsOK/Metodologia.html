@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Sticky Footer Navbar Template · Bootstrap v5.1</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Victoria Fuertes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="Infografia1.html">Infografia 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Infografia2.html">Infografia 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="MiHistoriaDatos.html">Mi Historia De Periodismo De Datos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Metodologia.html">Metodología</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+  <div class="container">
+    <h2 id="metodolog-a">METODOLOGÍA</h2>
+      <p>A continuación, voy explicar brevemente qué pasos he seguido para agrupar todos mis trabajos en esta página web:</p>
+      <p>El primer paso ha sido organizar todos los contenidos que aquí presento en sus carpetas correspondientes, de esta manera me va a ser más sencillo acceder a ellos. También he tenido que cambiar la ruta de algunas imágenes para que fuera posible su visualización en esta página web. </p>
+      <p>Posteriormente, me he descargado Pandoc desde <a href="https://pandoc.org/installing.html">Pandoc.org</a> para poder convertir todos estos archivos a formato HTML. Esta conversión la he realizado a través de la terminal siguiendo el siguiente modelo:  pandoc ruta/archivo.md -o ruta/archivo.index.html. Una vez los he transformado, he creado una carpeta llamada doc para recopilar todas estas prácticas en el formato HTML.</p>
+      <p>Con los comandos git add, git commit y git push he subido esta carpeta con los archivos transformados a github y las imágenes. A este paso, le ha sigo la descarga de la carpeta &quot;bootstrap-5.1.3-examples.zip&quot;, carpeta que he descoprimido con el comando unzip -| en la terminal. De esta nueva carpeta he seleccionado tres archivos (sticky-footer-navbar, css y js), que a través del comando mv he introducido en mi carpeta docs.</p>
+      <p>Una vez tenia todos los archivos necesarios he procedido a realizar cambios la plantilla: index.html para poder configurar mi página web. De esta manera he realizado acciones tales como introducir los archivos HTML de las prácticas en el apartado &quot;begin page content&quot;. Una vez que tenía configurada mi página web he subido la carpeta docs a github y a través de &quot;settings&quot; y la opción &quot;pages&quot; he generado el siguiente link</p>
+  </div>
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Periodismo de Datos. UC3M</span>
+  </div>
+</footer>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
